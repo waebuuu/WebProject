@@ -25,6 +25,11 @@ router.get('/products', function(req, res, next) {
   res.render('index', { title: 'Products' });
 });
 
+/* GET Services page. */
+router.get('/services', function(req, res, next) {
+  res.render('index', { title: 'Services' });
+});
+
 /* GET Contact us page. */
 router.get('/contact', function(req, res, next) {
   res.render('index', { title: 'Contact US' });

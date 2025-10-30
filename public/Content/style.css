@@ -1,0 +1,218 @@
+@charset "UTF-8";
+/* Color Scheme : #6C2AF5, #AC93F4, #F46EE5, #F59F84, #F46175*/
+/* The body tag style applies to all elements on the page */
+
+
+body {
+    /*background-color gradient between rgb (59, 2, 112) & rgb (111, 0, 255)*/
+    background: rgb(59, 2, 112);
+    background: -moz-linear-gradient(top, rgb(111, 0, 255) 0%, rgb(59, 2, 112) 100%);
+    background: -webkit-linear-gradient(top, rgb(111, 0, 255) 0%, rgb(59, 2, 112) 100%);
+    background: -o-linear-gradient(top, rgb(111, 0, 255) 0%, rgb(59, 2, 112) 100%);
+    background: linear-gradient(to bottom, rgb(111, 0, 255) 0%, rgb(59, 2, 112) 100%);
+    font-family: Verdana, Geneva, Arial, sans-serif;
+    /*formatting, making sure we got no spaces and centering all the things*/
+    padding: 0px;
+    margin: 0px;
+    text-align: center;
+}
+
+/*Header space at the top*/
+header.homepage
+{
+    padding-bottom: 50px;
+}
+/*used to make the homepage paragraph seem larger*/
+p.homepara
+{
+    margin: 0 auto;
+    max-width: 400px; /*avoid is being spread too much to look larger*/
+    text-align: center;
+} 
+
+/*header gradient*/
+.project-header
+{
+    height: 200px;
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#38006d+0,fff1f1+100 */
+    background: linear-gradient(to bottom,  #38006d 0%,rgb(255, 241, 241) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+}
+/*footer and header*/
+header, footer
+{
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#38006d+1,38006d+1,fff1f1+40,fff1f1+60,38006d+100 */
+background: linear-gradient(to right,  #38006d 1%,#38006d 1%,#fff1f1 40%,#fff1f1 60%,#38006d 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+   color: rgb(0, 0, 0);
+   padding-top: 5px;
+   padding-bottom: 5px;
+}
+
+
+address
+{
+    margin-left: 15px;
+}
+aside
+{
+    background-color: rgb(255, 241, 241);
+    float: right;
+    margin: 5px;
+    padding: 5px;
+    width: 250px;
+}
+/* The wrapper ID style is used with a div tag to make a 960px wide page */
+#wrapper {
+    width: 960px;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: rgb(233, 179, 251);
+    background-color: rgb(255, 241, 241);
+}
+mark
+{
+    background-color: rgb(255, 241, 241);
+}
+figure
+{
+    background-color: rgb(255, 241, 241);
+    width: 270px;
+    height: 270px;
+    margin: 10px;
+    border: 2px solid black;
+
+
+    align-items: center;        /* vertical center */
+    justify-content: center;    /* horizontal center */
+}
+figcaption
+{
+    /*colour*/
+    color: rgb(0, 0, 0);
+}
+
+.profile-pic
+{
+    float:left;
+    margin: 10px;
+    margin-bottom: 10px;
+    text-align:center
+}
+
+.about-text {
+    text-align: left;
+    margin: 20px;
+    margin-top: 10px;
+}
+
+.clear {
+    clear: both;
+}
+
+article
+{
+    height: 520px;
+}
+/* The left-column ID style is floated left */
+#left-column {
+    float: left;
+    width: 360px;
+    background-color: rgb(250, 234, 177);
+    color: rgb(255, 241, 241);
+    height: 600px;
+}
+/* Defining a style for a set of tags separated by commas applies the style to all tags */
+h1,h2,h3,h4,h5,h6,p,li {
+    margin-left: 15px;
+}
+
+
+#footer {
+    height: 80px;
+    background-color: rgb(59, 2, 112);
+    color: rgb(255, 241, 241);
+    padding-top: 20px;
+}
+
+
+#banner {
+    height: 120px;
+    background: linear-gradient(45deg, rgb(233, 179, 251), rgb(111, 0, 255));
+}
+
+
+/* Defining a style for a set of tags not separated by commas applies the style only to all tags within the preceding tag*/
+#banner h1 {
+    color: rgb(255, 241, 241);
+    padding-top: 30px;
+}
+
+
+/* all the alignment and margins needed to make the boxes work for project */
+.project-box {
+    float: left;
+    width: 48%;          
+    height: 250px;      
+    margin: 1%;
+    padding: 25px;
+    opacity: .8;
+    text-align: center;
+    box-sizing: border-box;
+    border-radius: 8px;
+    background-color: rgb(233, 179, 251);
+    border: 2px solid rgb(59, 2, 112);
+}
+
+
+/* The following pseudo-class applies to the box class when in a hovered state */
+.project-box:hover {
+    opacity: 1;
+/* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#fceabb+0,fccd4d+100,f8b500+98,fbdf93+77;Orange+3D+%235 */
+background: radial-gradient(ellipse at center,  #fceabb 0%,#fccd4d 100%,#f8b500 98%,#fbdf93 77%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+
+}
+
+
+.clear {
+    clear: both;
+}
+
+
+video
+{
+    width: 400px;
+    padding: 15px;
+    margin: 15px;
+    background-color:black;
+    border:2px rgb(255, 241, 241) solid;
+    box-shadow: 10px 10px 5px black;
+}
+
+
+button
+{
+background-color:rgb(111, 0, 255);
+margin: 15px;
+color:rgb(255, 241, 241);
+height:40px;
+border:2px rgb(255, 241, 241) solid;
+border-radius: 5px;
+}
+
+
+button:hover
+{
+    background-color:rgb(59, 2, 112);
+    color:rgb(255, 241, 241);
+    height:40px;
+    border:2px rgb(255, 241, 241) solid;
+    box-shadow: -10px -10px 5px rgb(233, 179, 251);
+    border-radius: 5px;
+}
+
+
+
+
+

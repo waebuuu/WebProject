@@ -2,27 +2,19 @@
 <link rel="stylesheet" href="/Content/style.css" type="text/css">
 <%- include('./partials/main_nav.ejs') %>
 
-<h1><%= title %></h1>
-    <body>
-            <article>            
-                 <figure class="profile-pic">
-                    <img src="imageofme.png" width="270" height="270">
-                    <figcaption>
-                        <p>Look thats me ^^ !</p>
-                    </figcaption>
-                </figure>
-
-                <section class="about-text">
-                    <h2>Who am I?</h2>
-                    <p>My name is Zahra Mirza, I am 19 years old and I am a second year student at Ontario Tech University!  </p>
-                    <p>I love working on  projects where I can be creative, whether it be on technology or a canvas. Outside of school, I enjoy drawing and sometimes create digital art of characters I like. My goal is to keep developing my skills in design and programming so I can build engaging, meaningful projects in the future.</p>
-                    <p>Below I have attached a video about myself!!</p>
-                    <button onclick="window.location.href='video.html'">Watch My Video</button>
-
-                </section>
-            </article>
-        </div>
-    </body>
-</html>
+<div class="card mb-3" style="max-width: 540px;">
+  <div class="row g-0">
+    <div class="col-md-4">
+      <img src="..." class="img-fluid rounded-start" alt="...">
+    </div>
+    <div class="col-md-8">
+      <div class="card-body">
+        <h5 class="card-title">Card title</h5>
+        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+        <p class="card-text"><small class="text-body-secondary">Last updated 3 mins ago</small></p>
+      </div>
+    </div>
+  </div>
+</div>
 
 <%- include('./partials/footer.ejs') %>

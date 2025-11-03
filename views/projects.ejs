@@ -1,59 +1,92 @@
-<%- include('./partials/header.ejs') %>
+<%- include ./partials/header.ejs %>
 <link rel="stylesheet" href="/Content/style.css" type="text/css">
-<%- include('./partials/main_nav.ejs') %>
+<%- include ./partials/main_nav.ejs %>
 
 <div class="container text-center my-5">
-    <div class="row row-cols-2 row-cols-lg-3 g-2 g-lg-3"></div>
+<div class="bg-white p-5 rounded-4 shadow text-center">
   <h1><%= title %></h1>
-  <h2>Projects & Assignments</h2>
   <p>2024 - 2025</p>
-  
-    <div class="col-md-6 col-lg-4">
-      <div class="p-4 border rounded bg-light project-box h-100">
-        <h3>1. Word Unscramble Game</h3>
-        <p>A Python two-person game where players compete to unscramble letters into words. The game tracks scores and announces a winner once a player ends the game.</p>
+
+  <p>
+    <button class="btn btn-primary w-25" style="height: 60px;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProject1" aria-expanded="false" aria-controls="collapseWidthExample">
+      Word Unscramble Game
+    </button>
+  </p>
+  <div class="collapse" id="collapseProject1">
+    <div class="collapse collapse-horizontal" id="collapseProject1">
+      <div class="card card-body border-dark text-start text-dark" style="width: 100%;">
+        A Python two-person game where players compete to unscramble letters into words. The game tracks scores and announces a winner once a player ends the game.
       </div>
     </div>
-
-    <div class="col-md-6 col-lg-4">
-      <div class="p-4 border rounded bg-light project-box h-100">
-        <h3>2. Library Management System</h3>
-        <p>A Python OOP system that allows users and admins to request and borrow library items including books, movies, and magazines. Includes a fully functional GUI interface.</p>
-      </div>
-    </div>
-
-
-    <div class="col-md-6 col-lg-4">
-      <div class="p-4 border rounded bg-light project-box h-100">
-        <h3>3. Case Study I</h3>
-        <p>Designed and configured a network connecting three buildings with LANs and core routers. The setup includes remote connectivity and gateway routing.</p>
-      </div>
-    </div>
-
-    <div class="col-md-6 col-lg-4">
-      <div class="p-4 border rounded bg-light project-box h-100">
-        <h3>4. Case Study II</h3>
-        <p>Created a detailed network topology enabling communication between different networks using BGP and VLAN routing protocols.</p>
-      </div>
-    </div>
-
-    <div class="col-md-6 col-lg-4">
-      <div class="p-4 border rounded bg-light project-box h-100">
-        <h3>5. Marketing Plan</h3>
-        <p>Developed a 13-page marketing plan with visuals and charts for a fictional fitness company, detailing strategy, location choices, and promotional design.</p>
-      </div>
-    </div>
-
-    <div class="col-md-6 col-lg-4">
-      <div class="p-4 border rounded bg-light project-box h-100">
-        <h3>6. Writing & Critical Thinking</h3>
-        <p>Wrote an analytical essay exploring the effects and psychological benefits of rejection therapy through the story of a man overcoming social anxiety.</p>
-      </div>
-    </div>
-
-
   </div>
+
+  <p>
+    <button class="btn btn-primary w-25" style="height: 60px;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProject2" aria-expanded="false" aria-controls="collapseWidthExample">
+      Library Management System
+    </button>
+  </p>
+  <div class="collapse" id="collapseProject2">
+    <div class="collapse collapse-horizontal" id="collapseProject2">
+      <div class="card card-body border-dark text-start text-dark" style="width: 100%;">
+          A Python OOP system that allows users and admins to request and borrow library items including books, movies, and magazines. Includes a fully functional GUI interface.
+        </div>
+    </div>
+  </div>
+
+  <p>
+    <button class="btn btn-primary w-25" style="height: 60px;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProject3" aria-expanded="false" aria-controls="collapseWidthExample">
+      Case Study I
+    </button>
+  </p>
+  <div class="collapse" id="collapseProject3">
+    <div class="collapse collapse-horizontal" id="collapseProject3">
+            <div class="card card-body border-dark text-start text-dark" style="width: 100%;">
+              Designed and configured a network connecting three buildings with LANs and core routers. The setup includes remote connectivity and gateway routing.
+            </div>
+    </div>
+  </div>
+
+  <p>
+    <button class="btn btn-primary w-25" style="height: 60px;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProject4" aria-expanded="false" aria-controls="collapseWidthExample">
+      Case Study II
+    </button>
+  </p>
+  <div class="collapse" id="collapseProject4">
+    <div class="collapse collapse-horizontal" id="collapseProject4">
+            <div class="card card-body border-dark text-start text-dark" style="width: 100%;">
+              Created a detailed network topology enabling communication between different networks using BGP and VLAN routing protocols.
+            </div>
+    </div>
+  </div>
+
+  <p>
+    <button class="btn btn-primary w-25" style="height: 60px;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProject5" aria-expanded="false" aria-controls="collapseWidthExample">
+      Marketing Plan
+    </button>
+  </p>
+  <div class="collapse" id="collapseProject5">
+    <div class="collapse collapse-horizontal" id="collapseProject5">
+      <div class="card card-body border-dark text-start text-dark" style="width: 100%;">
+              Developed a 13-page marketing plan with visuals and charts for a fictional fitness company, detailing strategy, location choices, and promotional design.
+            </div>
+    </div>
+  </div>
+
+  <p>
+    <button class="btn btn-primary w-25" style="height: 60px;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProject6" aria-expanded="false" aria-controls="collapseWidthExample">
+      Writing & Critical Thinking
+    </button>
+  </p>
+  <div class="collapse" id="collapseProject6">
+    <div class="collapse collapse-horizontal" id="collapseProject6">
+      <div class="card card-body border-dark text-start text-dark" style="width: 100%;">
+              Wrote an analytical essay exploring the effects and psychological benefits of rejection therapy through the story of a man overcoming social anxiety.
+            </div>
+    </div>
+  </div>
+</div>
 </div>
 
 
-<%- include('./partials/footer.ejs') %>
+
+<%- include ./partials/footer.ejs %>

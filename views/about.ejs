@@ -1,7 +1,7 @@
 <%- include('./partials/header.ejs') %>
-<link rel="stylesheet" href="/Content/style.css" type="text/css">
 <%- include('./partials/main_nav.ejs') %>
 
+<script src = "/Script/video.js" defer></script>
 <div class="container my-5">
   <div class="card shadow-lg border-0 mx-auto" style="max-width: 800px;">
     <div class="row g-0 align-items-center">
@@ -21,19 +21,17 @@
           </p>
     
             <p class="card-text mt-3">Below is a video of my drawing!</p>
-            <button class="btn btn-primary mt-2" data-bs-toggle="collapse" data-bs-target="#video" aria-expanded="false" aria-controls="video">
-                          🎥 Watch My Video
-            </button> 
-              <p>
-
-            <div class="collapse" id="video">
-                <div class="card card-body border-dark text-start text-dark">
-                  <video id="video" width="320" height="240" controls autoplay muted loop poster="/Assest/images/poster.png" preload="auto">
-                    <source src="/Asset/videos/videos.mp4" type="video/mp4">
-                   </video>
+            <button class="btn btn-primary mt-2" data-bs-toggle="collapse" data-bs-target="#video" aria-expanded="false" aria-controls="video"> 🎥 Watch My Video </button> 
+            
+              <div class="collapse" id="video">
+                  <div class="card card-body border-dark">
+                    <video id="video" width="320" height="240" controls autoplay muted loop poster="/Assest/images/poster.png" preload="auto">
+                      <source src="/Asset/videos/videos.mp4" type="video/mp4">
+                    </video>
+                    <button onclick="playPause()"><i class="fa-solid fa-play"></i></button>
+                  </div>
                 </div>
               </div>
-            </div>
     </div>
   </div>
 </div>

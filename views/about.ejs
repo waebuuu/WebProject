@@ -1,7 +1,6 @@
 <%- include('./partials/header.ejs') %>
 <%- include('./partials/main_nav.ejs') %>
 
-<script src = "/Script/video.js" defer></script>
 <div class="container my-5">
   <div class="card shadow-lg border-0 mx-auto" style="max-width: 800px;">
     <div class="row g-0 align-items-center">
@@ -13,7 +12,7 @@
     <div class="col-md-7">
       <div class="card-body">
         <h2 class="card-title mb-3"><%= title %></h2>
-            <p class="card-text">
+          <p class="card-text">
             My name is <strong>Zahra Mirza</strong>, I am 19 years old and currently a second-year student at Ontario Tech University. 
             I love working on projects where I can be creative — whether that’s through technology or on a canvas. Outside of school, 
             I enjoy drawing and often create digital art of characters I like. My goal is to continue developing my skills in design 
@@ -25,10 +24,19 @@
             
               <div class="collapse" id="video">
                   <div class="card card-body border-dark">
-                    <video id="video" width="320" height="240" controls autoplay muted loop poster="/Assest/images/poster.png" preload="auto">
+                    <video id="myVideo" width="320" height="240" controls autoplay muted loop poster="/Assest/images/poster.png" preload="auto">
                       <source src="/Asset/videos/videos.mp4" type="video/mp4">
                     </video>
+                    <script>
+                      var myVideo=document.getElementById("myVideo");
+                      function playPause() 
+                      { 
+                        if (myVideo.paused) myVideo.play(); 
+                        else myVideo.pause();
+                      }
+                    </script>
                     <button onclick="playPause()"><i class="fa-solid fa-play"></i></button>
+                    
                   </div>
                 </div>
               </div>

@@ -1,6 +1,7 @@
 @charset "UTF-8";
 /* Color Scheme : #6C2AF5, #AC93F4, #F46EE5, #F59F84, #F46175*/
-/* The body tag style applies to all elements on the page */
+/* The body tag style applies to all elements on the page 
+copied and edited from assignment 1*/
 
 
 body {
@@ -17,13 +18,14 @@ body {
     text-align: center;
 }
 
+/*video sizing*/
 video {
     width: 400px;
     background-color:black;
     border:2px rgb(255, 241, 241) solid;
 }
 
-
+/*button sizing*/
 button {
 background-color:rgb(111, 0, 255);
 margin: 15px;

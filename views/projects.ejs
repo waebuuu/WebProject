@@ -1,12 +1,16 @@
+<!--Projects page
+this include stuff is to add the header, nav bar and footer-->
 <%- include ./partials/header.ejs %>
 <link rel="stylesheet" href="/Content/style.css" type="text/css">
 <%- include ./partials/main_nav.ejs %>
 
+<!--container holding all project info-->
 <div class="container text-center my-5">
 <div class="bg-white p-5 rounded-4 shadow text-center">
   <h1><%= title %></h1>
   <p>2024 - 2025</p>
 
+  <!-- seperate colaspable paragraphs eachw their own button to open and close them-->
   <p>
     <button class="btn btn-primary w-25" style="height: 60px;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseProject1" aria-expanded="false" aria-controls="collapseWidthExample">
       Word Unscramble Game
@@ -87,6 +91,5 @@
 </div>
 </div>
 
-
-
+<!--footer-->
 <%- include ./partials/footer.ejs %>

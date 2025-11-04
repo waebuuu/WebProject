@@ -1,11 +1,15 @@
+<!-- Home page
+this include stuff is to add the header, nav bar and footer-->
 <%-include ./partials/header.ejs %>
 <%-include ./partials/main_nav.ejs %>
 
+<!--container holding the card info-->
 <div class="container min-vh-100 d-flex justify-content-center align-items-center" >
 <div class="card text-center">
   <div class="card-header">
     <h1><%= title %></h1>
 
+    <!--card to hold the home page text-->
   </div>
   <div class="card-body">
     <h5 class="card-title"> Welcome to <%= title %></h5>
@@ -19,5 +23,7 @@
     yipee!
   </div>
 </div>
+
+<!--footer-->
 <%-include ./partials/footer.ejs %>
 

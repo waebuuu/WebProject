@@ -84,19 +84,9 @@ The deployment is configured so that all static assets load correctly through Ex
 
 ---
 
-## Credits and Compliance
-
-- **Bootstrap 5 Framework:** [https://getbootstrap.com/] 
-- **Font Awesome Icons:** [https://fontawesome.com/] 
-- **Render Hosting:** [https://render.com/]
-
-Styling and structure references were based on **Bootstrap documentation** and **lecture materials from Weeks 07–08**.  
-All external code used remains below the **10% limit** and is fully cited in compliance with course academic integrity standards.
-
----
-
 ## Submission Details
 
 - **Cloud Hosted Link:** [https://web-portfolio-assignemnt.onrender.com/home] 
 - **GitHub Repository Link:** [https://github.com/waebuuu/WebProject]
 - **ZIP File Submission:** Uploaded to Canvas as per course submission requirements.
+

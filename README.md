@@ -82,11 +82,3 @@ The deployment is configured so that all static assets load correctly through Ex
 **Live Site Link:**  
 [https://web-portfolio-assignemnt.onrender.com/home]
 
----
-
-## Submission Details
-
-- **Cloud Hosted Link:** [https://web-portfolio-assignemnt.onrender.com/home] 
-- **GitHub Repository Link:** [https://github.com/waebuuu/WebProject]
-- **ZIP File Submission:** Uploaded to Canvas as per course submission requirements.
-

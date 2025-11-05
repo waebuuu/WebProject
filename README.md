@@ -2,94 +2,101 @@
 
 ## Overview
 
-This project is a personal portfolio website built using **Node.js** and **Express.js** with the **EJS templating engine**.
+This project is a personal portfolio website built using **Node.js** and **Express.js** with the **EJS templating engine**.  
 It includes four main pages: **Home**, **About Me**, **Projects**, and **Contact Me**, and is deployed live via **Render**.
-The goal of this assignment is to demonstrate understanding of Express routing, EJS templates, Bootstrap integration, and version control best practices.
+
+The purpose of this assignment is to demonstrate understanding of **Express routing**, **EJS templates**, **Bootstrap integration**, and **version control best practices**, in accordance with the INFR3120 Assignment 2 rubric.
 
 ---
 
 ## Technologies Used
 
-* **Node.js** and **Express.js**
-* **EJS Templating Engine**
-* **Bootstrap 5** and **Font Awesome**
-* **CSS (Custom Styling)**
-* **GitHub** for Version Control
-* **Render** for Cloud Deployment
+- **Node.js** and **Express.js**
+- **EJS Templating Engine**
+- **Bootstrap 5** and **Font Awesome**
+- **Custom CSS Styling**
+- **GitHub** for Version Control
+- **Render** for Cloud Deployment
 
 ---
 
 ## Site Structure
 
-The site was generated using the **Express Generator** with the `--views=ejs` option.
+The site was generated using the **Express Generator** with the `--views=ejs` option to properly configure the EJS templating engine.
 
-### Key Folders:
+### Key Folders
 
-* **/public** – contains all static assets (CSS, JavaScript, images, multimedia)
-* **/views** – contains all EJS templates and partials
-* **/routes** – includes the routing logic (`index.js`)
-* **/bin/www** – handles server startup configuration
+- **/public** – contains all static assets such as CSS, JavaScript, images, and multimedia  
+- **/views** – contains all EJS templates and shared partials  
+- **/routes** – includes the routing logic (`index.js`) for each page  
+- **/bin/www** – manages the server startup configuration  
+
+This structure adheres to the required Express application layout as stated in the rubric.
 
 ---
 
 ## EJS Templating and Partials
 
-Each page uses an individual **EJS view template**, and a shared **layout** provides a consistent header, navigation bar, and footer.
-Shared components:
+Each page uses its own **EJS view template**, while shared components such as the **header**, **navigation bar**, and **footer** are included through **EJS partials**.  
+This ensures consistent design, modular structure, and easy updates across the site.
 
-* **Header**: imported at the top of each page using `<%- include('./partials/header.ejs') %>`
-* **Footer**: includes active links to GitHub and LinkedIn
+The **footer** contains active links to both **GitHub** and **LinkedIn**, satisfying layout template requirements.
 
 ---
 
 ## Express Routing
 
-Each page has its own **Express route** defined in the `index.js` file inside the `routes` folder.
+Each page is connected to a dedicated **Express route** in the `index.js` file located in the `routes` directory.  
+These routes utilize `res.render()` to load the correct EJS template for each page, ensuring full functionality and navigation throughout the site.
+
 ---
 
 ## Styling and Front-End
 
-The project implements **Bootstrap 5** and **Font Awesome** for consistent styling, responsiveness, and icon use.
-A **custom `style.css`** file is included for additional personalized styles, located in the `/public/Content` directory.
+The project integrates **Bootstrap 5** and **Font Awesome** to achieve a modern, responsive, and accessible design.  
+A **custom `style.css`** file adds personalized styling and is located in `/public/Content/`.
 
-All elements (navbar, buttons, cards, footer) were tested for responsiveness and cross-browser consistency.
+All interface components (navbar, cards, buttons, and footer) were tested for responsiveness and browser compatibility.  
+Bootstrap components were referenced from official documentation, and general page layout and content were adapted from **Assignment 1** as per project requirements.
 
 ---
 
 ## Version Control Practices
 
-The project follows **GitHub version control best practices**:
+This project follows **GitHub version control best practices**:
 
-* Repository is **public and organized**
-* Multiple commits showing development progress (e.g., setup, routing, styling, deployment)
-* Each commit includes descriptive messages outlining the change
+- The repository is **public** and clearly **organized**
+- Multiple commits record major development stages (setup, routing, styling, and deployment)
+- Commit messages are **descriptive and meaningful**
 
-Repository link:
-`[Insert GitHub Repository Link]`
+**Repository Link:**  
+[https://github.com/waebuuu/WebProject]
 
 ---
 
 ## Cloud Deployment
 
-The portfolio site is hosted live using **Render**, ensuring stable deployment and easy access.
-The deployment follows the proper structure where static assets load correctly via Express middleware.
+The site is **deployed on Render** to ensure stable and accessible cloud hosting.  
+The deployment is configured so that all static assets load correctly through Express middleware.
 
-Live site link:
-`[Insert Live Render Link]`
+**Live Site Link:**  
+[https://web-portfolio-assignemnt.onrender.com/home]
 
 ---
 
 ## Credits and Compliance
 
-* **Bootstrap 5 Framework**: [https://getbootstrap.com/](https://getbootstrap.com/)
-* **Font Awesome Icons**: [https://fontawesome.com/](https://fontawesome.com/)
-* **Render Hosting**: [https://render.com/](https://render.com/)
+- **Bootstrap 5 Framework:** [https://getbootstrap.com/] 
+- **Font Awesome Icons:** [https://fontawesome.com/] 
+- **Render Hosting:** [https://render.com/]
 
-Code was styling is based off of avaible bootstrap codes and proffsers lectures 07-08
+Styling and structure references were based on **Bootstrap documentation** and **lecture materials from Weeks 07–08**.  
+All external code used remains below the **10% limit** and is fully cited in compliance with course academic integrity standards.
 
 ---
 
 ## Submission Details
 
-* **Cloud Hosted Link:** (https://web-portfolio-assignemnt.onrender.com/home)
-* **GitHub Repository Link:** (https://github.com/waebuuu/WebProject)
+- **Cloud Hosted Link:** [https://web-portfolio-assignemnt.onrender.com/home] 
+- **GitHub Repository Link:** [https://github.com/waebuuu/WebProject]
+- **ZIP File Submission:** Uploaded to Canvas as per course submission requirements.
